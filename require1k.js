@@ -121,7 +121,7 @@ R = (function (document, undefined) {
             // If the relative url doesn't begin with a ".", then it's
             // in node_modules
             relativeElement.href = relative[0] != "." ? "./node_modules/" + relative : relative;
-            resolved = relativeElement.href + ".js";
+            resolved = relativeElement.href;
             baseElement.href = "";
             return (MODULES[resolved] = MODULES[resolved] || {l: resolved});
         }
